@@ -1,0 +1,135 @@
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          172.16.36.130
++ Target Hostname:    172.16.36.130
++ Target Port:        80
++ Start Time:         2024-03-31 04:33:25 (GMT-7)
+---------------------------------------------------------------------------
++ Server: Apache/2.2.8 (Ubuntu) DAV/2
++ /: Retrieved x-powered-by header: PHP/5.2.4-2ubuntu5.10.
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ Apache/2.2.8 appears to be outdated (current is at least Apache/2.4.54). Apache 2.2.34 is the EOL for the 2.x branch.
++ /index: Uncommon header 'tcn' found, with contents: list.
++ /index: Apache mod_negotiation is enabled with MultiViews, which allows attackers to easily brute force file names. The following alternatives for 'index' were found: index.php. See: http://www.wisec.it/sectou.php?id=4698ebdc59d15,https://exchange.xforce.ibmcloud.com/vulnerabilities/8275
++ /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ /: HTTP TRACE method is active which suggests the host is vulnerable to XST. See: https://owasp.org/www-community/attacks/Cross_Site_Tracing
++ /phpinfo.php: Output from the phpinfo() function was found.
++ /doc/: Directory indexing found.
++ /doc/: The /doc/ directory is browsable. This may be /usr/doc. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-1999-0678
++ /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /phpMyAdmin/changelog.php: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ /phpMyAdmin/ChangeLog: Server may leak inodes via ETags, header found with file /phpMyAdmin/ChangeLog, inode: 92462, size: 40540, mtime: Tue Dec  9 09:24:00 2008. See: http://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2003-1418
++ /phpMyAdmin/ChangeLog: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ /test/: Directory indexing found.
++ /test/: This might be interesting.
++ /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information. See: CWE-552
++ /icons/: Directory indexing found.
++ /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
++ /phpMyAdmin/: phpMyAdmin directory found.
++ /phpMyAdmin/Documentation.html: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts.
++ /phpMyAdmin/README: phpMyAdmin is for managing MySQL databases, and should be protected or limited to authorized hosts. See: https://typo3.org/
++ /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
++ 8910 requests: 0 error(s) and 27 item(s) reported on remote host
++ End Time:           2024-03-31 04:33:47 (GMT-7) (22 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+- Nikto v2.5.0
+---------------------------------------------------------------------------
+---------------------------------------------------------------------------
++ 0 host(s) tested
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          172.16.36.133
++ Target Hostname:    172.16.36.133
++ Target Port:        80
++ Start Time:         2024-03-31 04:47:11 (GMT-7)
+---------------------------------------------------------------------------
++ Server: Apache
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ /lib/tpl/dokuwiki/images/favicon.ico: identifies this app/server as: dokuwiki (0.0.20080505) . See: https://en.wikipedia.org/wiki/Favicon
++ Multiple index files found: /index.do, /index.cfm, /index.php3, /index.asp, /index.xml, /index.shtml, /default.htm, /index.jsp, /index.php4, /index.jhtml, /index.php7, /index.html, /index.php5, /index.pl, /index.htm, /index.aspx, /default.asp, /index.cgi, /default.aspx, /index.php.
++ /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ /: DEBUG HTTP verb may show server debugging information. See: https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017
++ /lib/: This might be interesting.
++ /install.php: install.php file found.
++ /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
++ /piwik/index.php: Piwik Analytics login found.
++ /.well-known/assetlinks.json: Google Asset Links Specification file may contain server info. See: RFC-5785 https://github.com/google/digitalassetlinks/blob/master/well-known/details.md
++ 8916 requests: 0 error(s) and 11 item(s) reported on remote host
++ End Time:           2024-03-31 04:48:44 (GMT-7) (93 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          172.16.36.134
++ Target Hostname:    172.16.36.134
++ Target Port:        80
++ Start Time:         2024-03-31 04:50:29 (GMT-7)
+---------------------------------------------------------------------------
++ Server: lighttpd/1.4.35
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ OPTIONS: Allowed HTTP Methods: OPTIONS, GET, HEAD, POST .
++ /css/: Directory indexing found.
++ /css/: This might be interesting.
++ /images/: Directory indexing found.
++ /#wp-config.php#: #wp-config.php# file found. This file contains the credentials.
++ 8102 requests: 0 error(s) and 7 item(s) reported on remote host
++ End Time:           2024-03-31 04:50:46 (GMT-7) (17 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          172.16.36.135
++ Target Hostname:    172.16.36.135
++ Target Port:        80
++ Start Time:         2024-03-31 04:57:31 (GMT-7)
+---------------------------------------------------------------------------
++ Server: Apache
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ /phpinfo.php: Output from the phpinfo() function was found.
++ /?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings. See: OSVDB-12184
++ /server-status: This reveals Apache information. Comment out appropriate line in the Apache conf file or restrict access to allowed sources. See: OSVDB-561
++ /css/: Directory indexing found.
++ /css/: This might be interesting.
++ /cgi-bin/test.cgi: This might be interesting.
++ /phpinfo.php: PHP is installed, and a test script which runs phpinfo() was found. This gives a lot of system information. See: CWE-552
++ /images/: Directory indexing found.
++ /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
++ 8909 requests: 0 error(s) and 12 item(s) reported on remote host
++ End Time:           2024-03-31 04:57:49 (GMT-7) (18 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Target IP:          172.16.36.136
++ Target Hostname:    172.16.36.136
++ Target Port:        80
++ Start Time:         2024-03-31 05:02:56 (GMT-7)
+---------------------------------------------------------------------------
++ Server: Apache
++ /: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /: Drupal Link header found with value: <http://172.16.36.136/index.php/wp-json/>; rel="https://api.w.org/". See: https://www.drupal.org/
++ /: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ /: Web Server returns a valid response with junk HTTP methods which may cause false positives.
++ /: DEBUG HTTP verb may show server debugging information. See: https://docs.microsoft.com/en-us/visualstudio/debugger/how-to-enable-debugging-for-aspnet-applications?view=vs-2017
++ /icons/README: Apache default file found. See: https://www.vntweb.co.uk/apache-restricting-access-to-iconsreadme/
++ /readme.html: This WordPress file reveals the installed version.
++ /wp-links-opml.php: This WordPress script reveals the installed version.
++ /license.txt: License file found may identify site software.
++ /: A Wordpress installation was found.
++ /wp-login.php?action=register: Cookie wordpress_test_cookie created without the httponly flag. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies
++ /wp-login.php: Wordpress login found.
++ 8102 requests: 0 error(s) and 12 item(s) reported on remote host
++ End Time:           2024-03-31 05:03:23 (GMT-7) (27 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested

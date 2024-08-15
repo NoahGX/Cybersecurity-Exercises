@@ -1,0 +1,279 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-05 01:45 PDT
+Warning: 192.168.250.19 giving up on port because retransmission cap hit (10).
+Nmap scan report for 192.168.250.10
+Host is up (0.013s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+22/tcp  open  ssh     OpenSSH 2.9 (FreeBSD 20011202; protocol 1.99)
+25/tcp  open  smtp    Sendmail 8.11.6/8.11.6
+111/tcp open  rpcbind 2 (RPC #100000)
+587/tcp open  smtp    Sendmail 8.11.6/8.11.6
+Service Info: Host: daemon.cs574.local; OSs: FreeBSD, Unix; CPE: cpe:/o:freebsd:freebsd
+
+Nmap scan report for 192.168.250.11
+Host is up (0.018s latency).
+Not shown: 991 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    VERSION
+21/tcp   open  ftp        WU-FTPD wu-2.6.0
+23/tcp   open  telnet     Linux telnetd
+25/tcp   open  smtp       Sendmail 8.9.3/8.9.3
+79/tcp   open  finger     Linux fingerd
+111/tcp  open  rpcbind    2 (RPC #100000)
+513/tcp  open  login?
+514/tcp  open  tcpwrapped
+515/tcp  open  printer    lpd (error: : Malformed from address)
+1024/tcp open  nlockmgr   1-3 (RPC #100021)
+Service Info: Host: localhost.localdomain; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.250.12
+Host is up (0.013s latency).
+Not shown: 983 closed tcp ports (conn-refused)
+PORT      STATE SERVICE      VERSION
+21/tcp    open  ftp          Solaris ftpd
+22/tcp    open  ssh          SunSSH 1.1 (protocol 2.0)
+23/tcp    open  telnet       BSD-derived telnetd
+25/tcp    open  smtp         Sendmail 8.13.6+Sun/8.13.6
+79/tcp    open  finger       Sun Solaris fingerd
+111/tcp   open  rpcbind      2-4 (RPC #100000)
+513/tcp   open  login
+514/tcp   open  tcpwrapped
+587/tcp   open  smtp         Sendmail 8.13.6+Sun/8.13.6
+4045/tcp  open  nlockmgr     1-4 (RPC #100021)
+7100/tcp  open  font-service Sun Solaris fs.auto
+32771/tcp open  status       1 (RPC #100024)
+32772/tcp open  metad        1-2 (RPC #100229)
+32773/tcp open  mdcommd      1 (RPC #100422)
+32774/tcp open  rpc.metamedd 1 (RPC #100242)
+32775/tcp open  metamhd      1 (RPC #100230)
+32776/tcp open  rusersd      2-3 (RPC #100002)
+Service Info: Host: snoracle.cs574.local; OSs: Solaris, Unix; CPE: cpe:/o:sun:sunos
+
+Nmap scan report for 192.168.250.13
+Host is up (0.015s latency).
+Not shown: 970 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      VERSION
+7/tcp    open  echo
+9/tcp    open  discard?
+13/tcp   open  daytime      Microsoft Windows USA daytime
+17/tcp   open  qotd         Windows qotd (English)
+19/tcp   open  chargen
+21/tcp   open  ftp          Microsoft ftpd 5.0
+25/tcp   open  smtp         Microsoft ESMTP 5.0.2172.1
+42/tcp   open  wins         Microsoft Windows Wins
+80/tcp   open  http         Microsoft IIS httpd 5.0
+119/tcp  open  nntp         Microsoft NNTP Service 5.00.0984
+139/tcp  open  netbios-ssn  Microsoft Windows netbios-ssn
+443/tcp  open  https?
+445/tcp  open  microsoft-ds Microsoft Windows 2000 microsoft-ds
+515/tcp  open  printer      Microsoft lpd
+548/tcp  open  afp          (name: WIN2LAME; protocol 2.2; MS2.0)
+563/tcp  open  snews?
+1025/tcp open  msrpc        Microsoft Windows RPC
+1029/tcp open  msrpc        Microsoft Windows RPC
+1030/tcp open  msrpc        Microsoft Windows RPC
+1032/tcp open  msrpc        Microsoft Windows RPC
+1033/tcp open  msrpc        Microsoft Windows RPC
+1037/tcp open  msrpc        Microsoft Windows RPC
+1044/tcp open  msrpc        Microsoft Windows RPC
+1755/tcp open  wms?
+1801/tcp open  msmq?
+2103/tcp open  msrpc        Microsoft Windows RPC
+2105/tcp open  msrpc        Microsoft Windows RPC
+2107/tcp open  msrpc        Microsoft Windows RPC
+3372/tcp open  msdtc        Microsoft Distributed Transaction Coordinator
+6666/tcp open  irc?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port6666-TCP:V=7.94SVN%I=7%D=4/5%Time=660FBB63%P=x86_64-pc-linux-gnu%r(
+SF:NULL,220,"4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\
+SF:x04\0\x05\0\x05\0\x03\0\x07\0\x18\0\xd1\0\0\0\0\0\x01\0\0\0A\x07\0\0\x0
+SF:2\0\xc6\xd6\xc0\xa8B\x02\0\0\xb8\xfbF\x80\x08\x204\0\0\0V4\x12\0\0\0\0\
+SF:0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1
+SF:8\0\xbb\x01\0\0\0\0\0\0\0\0B\x07\0\0\x02\0\xdc\xe8\xc0\xa8B\x02\x1b\x81
+SF:\0\0\0\0\x01\x004\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe
+SF:8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xf0\0\0\0\0\0\x01\0\0\0B\x07\
+SF:0\0\x02\0\xdc\xe8\xc0\xa8B\x02\x1b\x81\0\0\0\0\x01\x004\0\0\0V4\x12\0\0
+SF:\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07
+SF:\0\x1d\0\xbb\x01\0\0\0\0\0\0\0\0C\x07\0\0\x02\0\xdc\xf8\xc0\xa8B\x02\0\
+SF:0\xba\x0e\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\x
+SF:e8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xbb\x01\0\0\0\0\x01\0\0\0C\x
+SF:07\0\0\x02\0\xdc\xf8\xc0\xa8B\x02\0\0\xba\x0e\0\x000q4\0\0\0V4\x12\0\0\
+SF:0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\
+SF:0\x1d\0\xb5\x02\0\0\0\0\0\0\0\0D\x07\0\0\x02\0\xdc\xfe\xc0\xa8B\x02\x1e
+SF:\x80\x005\xad\x86:\*4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\
+SF:0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xb5\x02\0\0\0\0\x01\0\0\0
+SF:D\x07\0\0\x02\0\xdc\xfe\xc0\xa8B\x02\x1e\x80\x005\xad\x86:\*4\0\0\0V4\x
+SF:12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03
+SF:\0\x07\0\x1d\0\xaf\x03\0\0\0\0\0\0\0\0E\x07\0\0\x02\0\xdd\n\xc0\xa8B\x0
+SF:2\x1e\x80\x005\xad\x86:\*")%r(Help,374,"4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x
+SF:004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x18\0\xd1\0
+SF:\0\0\0\0\x01\0\0\0A\x07\0\0\x02\0\xc6\xd6\xc0\xa8B\x02\0\0\xb8\xfbF\x80
+SF:\x08\x204\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x0
+SF:4\0\x05\0\x05\0\x03\0\x07\0\x18\0\xbb\x01\0\0\0\0\0\0\0\0B\x07\0\0\x02\
+SF:0\xdc\xe8\xc0\xa8B\x02\x1b\x81\0\0\0\0\x01\x004\0\0\0V4\x12\0\0\0\0\0\0
+SF:\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0
+SF:\xf0\0\0\0\0\0\x01\0\0\0B\x07\0\0\x02\0\xdc\xe8\xc0\xa8B\x02\x1b\x81\0\
+SF:0\0\0\x01\x004\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x
+SF:07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xbb\x01\0\0\0\0\0\0\0\0C\x07\0\0
+SF:\x02\0\xdc\xf8\xc0\xa8B\x02\0\0\xba\x0e\0\x000q4\0\0\0V4\x12\0\0\0\0\0\
+SF:0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\
+SF:0\xbb\x01\0\0\0\0\x01\0\0\0C\x07\0\0\x02\0\xdc\xf8\xc0\xa8B\x02\0\0\xba
+SF:\x0e\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x0
+SF:7\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xb5\x02\0\0\0\0\0\0\0\0D\x07\0\0\
+SF:x02\0\xdc\xfe\xc0\xa8B\x02\x1e\x80\x005\xad\x86:\*4\0\0\0V4\x12\0\0\0\0
+SF:\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x
+SF:1d\0\xb5\x02\0\0\0\0\x01\0\0\0D\x07\0\0\x02\0\xdc\xfe\xc0\xa8B\x02\x1e\
+SF:x80\x005\xad\x86:\*4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0
+SF:\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0\x1d\0\xaf\x03\0\0\0\0\0\0\0\0E\x
+SF:07\0\0\x02\0\xdd\n\xc0\xa8B\x02\x1e\x80\x005\xad\x86:\*4\0\0\0V4\x12\0\
+SF:0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x0
+SF:7\0\"\0\xaf\x03\0\0\0\0\0\0\0\0F\x07\0\0\x02\0\x9cr\xc0\xa8B\x02\0\0z\x
+SF:0c\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\
+SF:x04\0\x05\0\x05\0\x03\0\x07\0\"\0\xaf\x03\0\0\0\0\x01\0\0\0F\x07\0\0\x0
+SF:2\0\x9cr\xc0\xa8B\x02\0\0z\x0c\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x00
+SF:4\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0#\0\xc1\0\0\0\
+SF:0\0\0\0\0\0G\x07\0\0\x02\0\x9c\x80\xc0\xa8B\x026\x81\xfe\xfd\x90\xbf\0\
+SF:x004\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x
+SF:05\0\x05\0\x03\0\x07\0#\0\xc1\0\0\0\0\0\x01\0\0\0G\x07\0\0\x02\0\x9c\x8
+SF:0\xc0\xa8B\x026\x81\xfe\xfd\x90\xbf\0\x004\0\0\0V4\x12\0\0\0\0\0\0\0\0\
+SF:x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x03\0\x07\0#\0\xbb\x01
+SF:\0\0\0\0\0\0\0\0H\x07\0\0\x02\0\x9c\x86\xc0\xa8B\x02\x1e\x80\x005\xad\x
+SF:86z,");
+Service Info: Host: win2lame; OSs: Windows, Windows 2000; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000
+
+Nmap scan report for 192.168.250.14
+Host is up (0.014s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE   VERSION
+25/tcp   open     smtp      Sendmail 4.1/SMI-4.1
+111/tcp  open     rpcbind   2 (RPC #100000)
+515/tcp  open     printer   lpd
+1044/tcp filtered dcutility
+Service Info: Hosts: dinosparc.noname, dinosparc; OS: Unix
+
+Nmap scan report for 192.168.250.15
+Host is up (0.014s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT    STATE SERVICE VERSION
+25/tcp  open  smtp    Sendmail NX5.67g/NX3.0S
+111/tcp open  rpcbind 2 (RPC #100000)
+515/tcp open  printer lpd (path: /usr/lib/lpd; error: ....: Malformed from address)
+711/tcp open  rpcbind
+Service Info: Host: openslab.cs574.local; OS: Unix
+
+Nmap scan report for 192.168.250.16
+Host is up (0.014s latency).
+Not shown: 989 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE      VERSION
+25/tcp   open     smtp         Sendmail 8.8.8/SCO5
+80/tcp   open     http         Netscape FastTrack web server 2.01
+111/tcp  open     rpcbind      2 (RPC #100000)
+125/tcp  filtered locus-map
+139/tcp  open     netbios-ssn?
+199/tcp  open     smux?
+1024/tcp filtered kdm
+1025/tcp filtered NFS-or-IIS
+1026/tcp filtered LSA-or-nterm
+1032/tcp open     status       1 (RPC #100024)
+1033/tcp open     nlockmgr     2 (RPC #100021)
+Service Info: Host: opensore.cs574.local; OS: Unix
+
+Nmap scan report for 192.168.250.17
+Host is up (0.015s latency).
+Not shown: 974 closed tcp ports (conn-refused)
+PORT      STATE SERVICE          VERSION
+7/tcp     open  echo
+9/tcp     open  discard?
+13/tcp    open  daytime          Sun Solaris daytime
+19/tcp    open  chargen
+21/tcp    open  ftp              Sun SunOS ftpd 5.6
+23/tcp    open  telnet           Sun Solaris telnetd
+25/tcp    open  smtp             Sendmail SMI-8.6/SMI-SVR4
+37/tcp    open  time             (32 bits)
+79/tcp    open  finger           Sun Solaris fingerd
+111/tcp   open  rpcbind          2-4 (RPC #100000)
+512/tcp   open  exec
+513/tcp   open  login
+514/tcp   open  tcpwrapped
+515/tcp   open  printer          Sun Solaris lpd
+6000/tcp  open  X11?
+6112/tcp  open  dtspc?
+7100/tcp  open  font-service     Sun Solaris fs.auto
+32771/tcp open  status           1 (RPC #100024)
+32772/tcp open  rusersd          2-3 (RPC #100002)
+32773/tcp open  kcms_server      1 (RPC #100221)
+32774/tcp open  cachefsd         1 (RPC #100235)
+32775/tcp open  ttdbserverd      1 (RPC #100083)
+32776/tcp open  sometimes-rpc15?
+32777/tcp open  dmispd           1 (RPC #300598)
+32778/tcp open  snmpXdmid        1 (RPC #100249)
+32779/tcp open  cmsd             2-5 (RPC #100068)
+Service Info: Hosts: slowaris, slowaris.; OSs: Solaris, Unix; CPE: cpe:/o:sun:sunos, cpe:/o:sun:sunos:5.6
+
+Nmap scan report for 192.168.250.18
+Host is up (0.016s latency).
+Not shown: 995 closed tcp ports (conn-refused)
+PORT     STATE SERVICE    VERSION
+22/tcp   open  ssh        OpenSSH 3.8p1 (protocol 1.99)
+111/tcp  open  rpcbind    2 (RPC #100000)
+631/tcp  open  tcpwrapped
+2049/tcp open  nfs        2-4 (RPC #100003)
+5901/tcp open  vnc        VNC (unofficial protocol 3.130)
+
+Nmap scan report for 192.168.250.19
+Host is up (0.021s latency).
+Not shown: 993 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE VERSION
+21/tcp    open     ftp     WU-FTPD wu-2.6.2-5
+22/tcp    open     ssh     OpenSSH 3.1p1 (protocol 1.99)
+23/tcp    open     telnet  Linux telnetd
+80/tcp    open     http    Apache httpd 1.3.23 ((Unix)  (Red-Hat/Linux) mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26)
+1007/tcp  filtered unknown
+32768/tcp open     status  1 (RPC #100024)
+32769/tcp open     mountd  1-3 (RPC #100005)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.250.20
+Host is up (0.017s latency).
+Not shown: 996 closed tcp ports (conn-refused)
+PORT     STATE SERVICE      VERSION
+22/tcp   open  ssh          OpenSSH 4.5 (protocol 2.0)
+23/tcp   open  telnet       Openwall GNU/*/Linux telnetd
+88/tcp   open  kerberos-sec Mac OS X kerberos-sec
+5900/tcp open  vnc          Apple remote desktop vnc
+Service Info: OSs: Linux, Mac OS X; CPE: cpe:/o:linux:linux_kernel, cpe:/o:apple:mac_os_x
+
+Nmap scan report for 192.168.250.22
+Host is up (0.013s latency).
+Not shown: 973 closed tcp ports (conn-refused)
+PORT      STATE SERVICE     VERSION
+7/tcp     open  echo
+9/tcp     open  discard?
+13/tcp    open  daytime     HP-UX daytime
+19/tcp    open  chargen
+21/tcp    open  ftp         HP-UX or AIX ftpd 1.1.214.4
+23/tcp    open  telnet      HP-UX telnetd
+25/tcp    open  smtp        Sendmail 8.9.3/8.9.3
+37/tcp    open  time        (32 bits)
+111/tcp   open  rpcbind     2-4 (RPC #100000)
+113/tcp   open  ident       HP-UX identd
+512/tcp   open  exec        HP-UX rexecd
+513/tcp   open  login
+514/tcp   open  tcpwrapped
+515/tcp   open  printer?
+543/tcp   open  klogin?
+544/tcp   open  kshell      HP-UX kerberized rsh
+2049/tcp  open  nfs         2-3 (RPC #100003)
+4045/tcp  open  llockmgr    1 (RPC #100020)
+5989/tcp  open  ssl/http    Web-Based Enterprise Management CIM serverOpenPegasus WBEM httpd
+6112/tcp  open  tcpwrapped
+49152/tcp open  status      1 (RPC #100024)
+49153/tcp open  nlockmgr    1-4 (RPC #100021)
+49154/tcp open  nlockmgr    1-4 (RPC #100021)
+49155/tcp open  nlockmgr    1-4 (RPC #100021)
+49156/tcp open  nlockmgr    1-4 (RPC #100021)
+49157/tcp open  ttdbserverd 1 (RPC #100083)
+49160/tcp open  mountd      1-3 (RPC #100005)
+Service Info: Host: hpsux; OSs: HP-UX, Unix, Linux; CPE: cpe:/o:hp:hp-ux, cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 13 IP addresses (12 hosts up) scanned in 556.04 seconds

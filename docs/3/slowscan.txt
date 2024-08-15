@@ -1,0 +1,414 @@
+Starting Nmap 7.94SVN ( https://nmap.org ) at 2024-04-05 02:54 PDT
+Warning: 192.168.250.19 giving up on port because retransmission cap hit (10).
+Nmap scan report for 192.168.250.10
+Host is up (0.017s latency).
+Not shown: 998 closed udp ports (port-unreach), 996 closed tcp ports (conn-refused)
+PORT    STATE         SERVICE VERSION
+22/tcp  open          ssh     OpenSSH 2.9 (FreeBSD 20011202; protocol 1.99)
+25/tcp  open          smtp    Sendmail 8.11.6/8.11.6
+111/tcp open          rpcbind 2 (RPC #100000)
+587/tcp open          smtp    Sendmail 8.11.6/8.11.6
+111/udp open          rpcbind 2 (RPC #100000)
+514/udp open|filtered syslog
+Service Info: Host: daemon.cs574.local; OSs: FreeBSD, Unix; CPE: cpe:/o:freebsd:freebsd
+
+Nmap scan report for 192.168.250.11
+Host is up (0.014s latency).
+Not shown: 996 closed udp ports (port-unreach), 991 closed tcp ports (conn-refused)
+PORT     STATE         SERVICE    VERSION
+21/tcp   open          ftp        WU-FTPD wu-2.6.0
+23/tcp   open          telnet     Linux telnetd
+25/tcp   open          smtp       Sendmail 8.9.3/8.9.3
+79/tcp   open          finger     Linux fingerd
+111/tcp  open          rpcbind    2 (RPC #100000)
+513/tcp  open          login?
+514/tcp  open          tcpwrapped
+515/tcp  open          printer    lpd (error: : Malformed from address)
+1024/tcp open          nlockmgr   1-3 (RPC #100021)
+111/udp  open          rpcbind    2 (RPC #100000)
+517/udp  open          talk       Talk server
+518/udp  open          talk       Talk server
+1024/udp open|filtered nlockmgr   1-3 (RPC #100021)
+Service Info: Host: localhost.localdomain; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.250.12
+Host is up (0.028s latency).
+Not shown: 992 closed udp ports (port-unreach), 983 closed tcp ports (conn-refused)
+PORT      STATE         SERVICE        VERSION
+21/tcp    open          ftp            Solaris ftpd
+22/tcp    open          ssh            SunSSH 1.1 (protocol 2.0)
+23/tcp    open          telnet         BSD-derived telnetd
+25/tcp    open          smtp           Sendmail 8.13.6+Sun/8.13.6
+79/tcp    open          finger         Sun Solaris fingerd
+111/tcp   open          rpcbind        2-4 (RPC #100000)
+513/tcp   open          login
+514/tcp   open          tcpwrapped
+587/tcp   open          smtp           Sendmail 8.13.6+Sun/8.13.6
+4045/tcp  open          nlockmgr       1-4 (RPC #100021)
+7100/tcp  open          font-service   Sun Solaris fs.auto
+32771/tcp open          status         1 (RPC #100024)
+32772/tcp open          metad          1-2 (RPC #100229)
+32773/tcp open          mdcommd        1 (RPC #100422)
+32774/tcp open          rpc.metamedd   1 (RPC #100242)
+32775/tcp open          metamhd        1 (RPC #100230)
+32776/tcp open          rusersd        2-3 (RPC #100002)
+111/udp   open          rpcbind        2-4 (RPC #100000)
+514/udp   open|filtered syslog
+4045/udp  open          nlockmgr       1-4 (RPC #100021)
+32771/udp open|filtered sometimes-rpc6
+32775/udp open          status         1 (RPC #100024)
+32776/udp open          rstatd         2-4 (RPC #100001)
+32777/udp open          rusersd        2-3 (RPC #100002)
+32778/udp open          rquotad        1 (RPC #100011)
+Service Info: Host: snoracle.cs574.local; OSs: Solaris, Unix; CPE: cpe:/o:sun:sunos
+
+Nmap scan report for 192.168.250.13
+Host is up (0.014s latency).
+Not shown: 980 closed udp ports (port-unreach), 970 closed tcp ports (conn-refused)
+PORT     STATE         SERVICE       VERSION
+7/tcp    open          echo
+9/tcp    open          discard?
+13/tcp   open          daytime       Microsoft Windows USA daytime
+17/tcp   open          qotd          Windows qotd (English)
+19/tcp   open          chargen
+21/tcp   open          ftp           Microsoft ftpd 5.0
+25/tcp   open          smtp          Microsoft ESMTP 5.0.2172.1
+42/tcp   open          wins          Microsoft Windows Wins
+80/tcp   open          http          Microsoft IIS httpd 5.0
+119/tcp  open          nntp          Microsoft NNTP Service 5.00.0984
+139/tcp  open          netbios-ssn   Microsoft Windows netbios-ssn
+443/tcp  open          https?
+445/tcp  open          microsoft-ds  Microsoft Windows 2000 microsoft-ds
+515/tcp  open          printer       Microsoft lpd
+548/tcp  open          afp           (name: WIN2LAME; protocol 2.2; MS2.0)
+563/tcp  open          snews?
+1025/tcp open          msrpc         Microsoft Windows RPC
+1029/tcp open          msrpc         Microsoft Windows RPC
+1030/tcp open          msrpc         Microsoft Windows RPC
+1032/tcp open          msrpc         Microsoft Windows RPC
+1033/tcp open          msrpc         Microsoft Windows RPC
+1037/tcp open          msrpc         Microsoft Windows RPC
+1044/tcp open          msrpc         Microsoft Windows RPC
+1755/tcp open          wms?
+1801/tcp open          msmq?
+2103/tcp open          msrpc         Microsoft Windows RPC
+2105/tcp open          msrpc         Microsoft Windows RPC
+2107/tcp open          msrpc         Microsoft Windows RPC
+3372/tcp open          msdtc         Microsoft Distributed Transaction Coordinator
+6666/tcp open          irc?
+7/udp    open          echo
+9/udp    open|filtered discard
+13/udp   open          daytime       Sun Solaris daytime
+17/udp   open          qotd          Windows qotd (English)
+19/udp   open          chargen
+42/udp   open|filtered nameserver
+137/udp  open          netbios-ns    Microsoft Windows netbios-ssn (workgroup: WORKGROUP)
+138/udp  open|filtered netbios-dgm
+161/udp  open          snmp          SNMPv1 server (public)
+445/udp  open|filtered microsoft-ds
+500/udp  open|filtered isakmp
+1031/udp open|filtered iad2
+1034/udp open          msrpc
+1035/udp open          msrpc
+1036/udp open|filtered nsstp
+1645/udp open|filtered radius
+1646/udp open|filtered radacct
+1812/udp open|filtered radius
+1813/udp open|filtered radacct
+3456/udp open|filtered IISrpc-or-vat
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port6666-TCP:V=7.94SVN%I=7%D=4/5%Time=660FD0AA%P=x86_64-pc-linux-gnu%r(
+SF:NULL,88,"4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x
+SF:04\0\x05\0\x05\0\x04\0&\0\x0c\0\x1f\x01\0\0\0\0\x01\0\0\0_\x07\0\0\x02\
+SF:0\xc1D\xc0\xa8B\x02\0\0\n\r\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0
+SF:\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x0c\0\xbb\x01\0\0\0
+SF:\0\0\0\0\0`\x07\0\0\x02\0\xc1R\xc0\xa8B\x026\x81\xfe\xfd\x90\xbf\0\0")%
+SF:r(Help,440,"4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x0
+SF:7\x04\0\x05\0\x05\0\x04\0&\0\x0c\0\x1f\x01\0\0\0\0\x01\0\0\0_\x07\0\0\x
+SF:02\0\xc1D\xc0\xa8B\x02\0\0\n\r\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x00
+SF:4\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x0c\0\xbb\x01\0\
+SF:0\0\0\0\0\0\0`\x07\0\0\x02\0\xc1R\xc0\xa8B\x026\x81\xfe\xfd\x90\xbf\0\x
+SF:004\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x0
+SF:5\0\x05\0\x04\0&\0\x11\0>\x01\0\0\0\0\x01\0\0\0`\x07\0\0\x02\0\xc1R\xc0
+SF:\xa8B\x026\x81\xfe\xfd\x90\xbf\0\x004\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\
+SF:0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x11\0\xbb\x01\0\0\
+SF:0\0\0\0\0\0a\x07\0\0\x02\0\xc4T\xc0\xa8B\x02\0\0\x8a\x08\0\x000q4\0\0\0
+SF:V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0
+SF:\x04\0&\0\x11\0\xbb\x01\0\0\0\0\x01\0\0\0a\x07\0\0\x02\0\xc4T\xc0\xa8B\
+SF:x02\0\0\x8a\x08\0\x000q4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\x
+SF:f0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x11\0\xb5\x02\0\0\0\0\0\0\0\0b\
+SF:x07\0\0\x02\0\xc4V\xc0\xa8B\x02\x9f\x81`YK\x82\x8a\(4\0\0\0V4\x12\0\0\0
+SF:\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x1
+SF:1\0\xb5\x02\0\0\0\0\x01\0\0\0b\x07\0\0\x02\0\xc4V\xc0\xa8B\x02\x9f\x81`
+SF:YK\x82\x8a\(4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x0
+SF:7\x04\0\x05\0\x05\0\x04\0&\0\x11\0\xaf\x03\0\0\0\0\0\0\0\0c\x07\0\0\x02
+SF:\0\xc4\^\xc0\xa8B\x026\x81\x9cY\x9f\x81\xe8\x064\0\0\0V4\x12\0\0\0\0\0\
+SF:0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x11\0\x
+SF:af\x03\0\0\0\0\x01\0\0\0c\x07\0\0\x02\0\xc4\^\xc0\xa8B\x026\x81\x9cY\x9
+SF:f\x81\xe8\x064\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x
+SF:07\x04\0\x05\0\x05\0\x04\0&\0\x12\0\xc1\0\0\0\0\0\0\0\0\0d\x07\0\0\x02\
+SF:0\xc4f\xc0\xa8B\x02\x9f\x81`YK\x82\n-4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004
+SF:\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x12\0\xc1\0\0\0\0
+SF:\0\x01\0\0\0d\x07\0\0\x02\0\xc4f\xc0\xa8B\x02\x9f\x81`YK\x82\n-4\0\0\0V
+SF:4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\xe8\x07\x04\0\x05\0\x05\0\
+SF:x04\0&\0\x12\0\xbb\x01\0\0\0\0\0\0\0\0e\x07\0\0\x02\0\xc4n\xc0\xa8B\x02
+SF:\x9f\x81`YK\x82\n-4\0\0\0V4\x12\0\0\0\0\0\0\0\0\x004\0\0\0\x04\0\xf0\0\
+SF:xe8\x07\x04\0\x05\0\x05\0\x04\0&\0\x12\0\xbb\x01\0\0\0\0\x01\0\0\0e\x07
+SF:\0\0\x02\0\xc4n\xc0\xa8B\x02\x9f\x81`YK\x82\n-4\0\0\0V4\x12\0\0\0\0\0\0
+SF:\0\0\0");
+Service Info: Host: win2lame; OSs: Windows, Windows 2000, Solaris; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_2000, cpe:/o:sun:sunos
+
+Nmap scan report for 192.168.250.14
+Host is up (0.013s latency).
+Not shown: 996 closed tcp ports (conn-refused), 983 closed udp ports (port-unreach)
+PORT     STATE         SERVICE   VERSION
+25/tcp   open          smtp      Sendmail 4.1/SMI-4.1
+111/tcp  open          rpcbind   2 (RPC #100000)
+515/tcp  open          printer   lpd
+1044/tcp filtered      dcutility
+111/udp  open          rpcbind   2 (RPC #100000)
+514/udp  open|filtered syslog
+1025/udp open|filtered blackjack
+1026/udp open          nlockmgr  1-3 (RPC #100021)
+1027/udp open          nlockmgr  1-3 (RPC #100021)
+1028/udp open          llockmgr  2 (RPC #100020)
+1029/udp open          nlockmgr  1-3 (RPC #100021)
+1030/udp open          rquotad   1 (RPC #100011)
+1032/udp open          rusersd   1-2 (RPC #100002)
+1034/udp open          walld     1 (RPC #100008)
+1035/udp open          cmsd      2-3 (RPC #100068)
+1042/udp open          rquotad   1 (RPC #100011)
+1044/udp open          rusersd   1-2 (RPC #100002)
+1046/udp open          walld     1 (RPC #100008)
+1088/udp open          rquotad   1 (RPC #100011)
+1090/udp open          rusersd   1-2 (RPC #100002)
+1105/udp open          rusersd   1-2 (RPC #100002)
+Service Info: Hosts: dinosparc.noname, dinosparc; OS: Unix
+
+Nmap scan report for 192.168.250.15
+Host is up (0.017s latency).
+Not shown: 996 closed tcp ports (conn-refused), 995 closed udp ports (port-unreach)
+PORT     STATE         SERVICE VERSION
+25/tcp   open          smtp    Sendmail NX5.67g/NX3.0S
+111/tcp  open          rpcbind 2 (RPC #100000)
+515/tcp  open          printer lpd (path: /usr/lib/lpd; error: ....: Malformed from address)
+711/tcp  open          rpcbind
+67/udp   open|filtered dhcps
+111/udp  open          rpcbind 2 (RPC #100000)
+514/udp  open|filtered syslog
+1023/udp open|filtered unknown
+2967/udp open          renderd 1 (RPC #200100002)
+Service Info: Host: openslab.cs574.local; OS: Unix
+
+Nmap scan report for 192.168.250.16
+Host is up (0.014s latency).
+Not shown: 988 closed tcp ports (conn-refused), 987 closed udp ports (port-unreach)
+PORT     STATE         SERVICE        VERSION
+25/tcp   open          smtp           Sendmail 8.8.8/SCO5
+80/tcp   open          http           Netscape FastTrack web server 2.01
+111/tcp  open          rpcbind        2 (RPC #100000)
+125/tcp  filtered      locus-map
+139/tcp  open          netbios-ssn?
+199/tcp  open          smux?
+1024/tcp filtered      kdm
+1025/tcp filtered      NFS-or-IIS
+1026/tcp filtered      LSA-or-nterm
+1032/tcp open          status         1 (RPC #100024)
+1033/tcp open          nlockmgr       2 (RPC #100021)
+1533/tcp filtered      virtual-places
+111/udp  open          rpcbind        2 (RPC #100000)
+137/udp  open          netbios-ns
+138/udp  open|filtered netbios-dgm
+161/udp  open          snmp           SNMPv1 server (public)
+514/udp  open|filtered syslog
+520/udp  open          route?
+786/udp  open|filtered concert
+1019/udp open          nlockmgr       1-3 (RPC #100021)
+1024/udp open|filtered unknown
+1025/udp open          rusersd        1-2 (RPC #100002)
+1026/udp open          walld          1 (RPC #100008)
+1027/udp open|filtered unknown
+1031/udp open          status         1 (RPC #100024)
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port137-UDP:V=7.94SVN%I=7%D=4/5%Time=660FD13B%P=x86_64-pc-linux-gnu%r(N
+SF:BTStat,79,"\x80\xf0\x84\0\0\0\0\x01\0\0\0\0\x20CKAAAAAAAAAAAAAAAAAAAAAA
+SF:AAAAAAAA\0\0!\0\x01\0\0\0\0\0A\x01\0\0\0\0\0\0\0\0\0\0\x01\0\xc0\xa8\xf
+SF:a\x10\x06\0\x01\0\xc0\xa8\xfa\x10\0\0\0\x01\x0c\xbc\0\0\0\0\0\0\0\0\0\0
+SF:\0\0\0\0\0\0\0\0\0\0\xff\xff\xff\xff\xff\xff\0\0\0\xfe\0\xfe\xff\xff");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port520-UDP:V=7.94SVN%I=7%D=4/5%Time=660FD13B%P=x86_64-pc-linux-gnu%r(R
+SF:IPv1,18,"\x02\x01\0\0\0\x02\0\0\xc0\xa8\xfa\0\0\0\0\0\0\0\0\0\0\0\0\x01
+SF:");
+Service Info: Host: opensore.cs574.local; OS: Unix
+
+Nmap scan report for 192.168.250.17
+Host is up (0.014s latency).
+Not shown: 979 closed udp ports (port-unreach), 974 closed tcp ports (conn-refused)
+PORT      STATE         SERVICE          VERSION
+7/tcp     open          echo
+9/tcp     open          discard?
+13/tcp    open          daytime          Sun Solaris daytime
+19/tcp    open          chargen
+21/tcp    open          ftp              Sun SunOS ftpd 5.6
+23/tcp    open          telnet           Sun Solaris telnetd
+25/tcp    open          smtp             Sendmail SMI-8.6/SMI-SVR4
+37/tcp    open          time             (32 bits)
+79/tcp    open          finger           Sun Solaris fingerd
+111/tcp   open          rpcbind          2-4 (RPC #100000)
+512/tcp   open          exec
+513/tcp   open          login
+514/tcp   open          tcpwrapped
+515/tcp   open          printer          Sun Solaris lpd
+6000/tcp  open          X11?
+6112/tcp  open          dtspc?
+7100/tcp  open          font-service     Sun Solaris fs.auto
+32771/tcp open          status           1 (RPC #100024)
+32772/tcp open          rusersd          2-3 (RPC #100002)
+32773/tcp open          kcms_server      1 (RPC #100221)
+32774/tcp open          cachefsd         1 (RPC #100235)
+32775/tcp open          ttdbserverd      1 (RPC #100083)
+32776/tcp open          sometimes-rpc15?
+32777/tcp open          dmispd           1 (RPC #805306368)
+32778/tcp open          snmpXdmid        1 (RPC #100249)
+32779/tcp open          cmsd             2-5 (RPC #100068)
+7/udp     open          echo
+9/udp     open|filtered discard
+13/udp    open          daytime          Sun Solaris daytime
+19/udp    open          chargen
+37/udp    open          time             (32 bits)
+42/udp    open          nameserver?
+111/udp   open          rpcbind          2-4 (RPC #100000)
+161/udp   open          snmp             SNMPv1 server (public)
+177/udp   open          xdmcp            XDMCP (willing; status: 0 users  load: 0.0, 0.0, 0.0)
+512/udp   open|filtered biff
+514/udp   open|filtered syslog
+517/udp   open|filtered talk
+32771/udp open|filtered sometimes-rpc6
+32772/udp open          status           1 (RPC #100024)
+32773/udp open          sadmind          10 (RPC #100232)
+32774/udp open          rquotad          1 (RPC #100011)
+32775/udp open          rusersd          2-3 (RPC #100002)
+32776/udp open          sprayd           1 (RPC #100012)
+32777/udp open          walld            1 (RPC #100008)
+32778/udp open          rstatd           2-4 (RPC #100001)
+32779/udp open          cmsd             2-5 (RPC #100068)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port42-UDP:V=7.94SVN%I=7%D=4/5%Time=660FD17B%P=x86_64-pc-linux-gnu%r(SI
+SF:POptions,55,"OPTIONS\x20sip:nm\x20SIP/2\.0\r\nVia:\x20SIP/2\.0/UDP\x20n
+SF:m;branch=foo;rport\r\nFrom:\x20<sip:nm@nm>;ta\x03\x03\x02");
+Service Info: Hosts: slowaris, slowaris.; OSs: Solaris, Unix; CPE: cpe:/o:sun:sunos, cpe:/o:sun:sunos:5.6
+
+Nmap scan report for 192.168.250.18
+Host is up (0.013s latency).
+Not shown: 997 closed udp ports (port-unreach), 995 closed tcp ports (conn-refused)
+PORT     STATE         SERVICE    VERSION
+22/tcp   open          ssh        OpenSSH 3.8p1 (protocol 1.99)
+111/tcp  open          rpcbind    2 (RPC #100000)
+631/tcp  open          tcpwrapped
+2049/tcp open          nfs        2-4 (RPC #100003)
+5901/tcp open          vnc        VNC (unofficial protocol 3.130)
+111/udp  open          rpcbind    2 (RPC #100000)
+123/udp  open          ntp        NTP v4 (secondary server)
+2049/udp open|filtered nfs        2-4 (RPC #100003)
+
+Nmap scan report for 192.168.250.19
+Host is up (0.018s latency).
+Not shown: 997 closed udp ports (port-unreach), 993 closed tcp ports (conn-refused)
+PORT      STATE    SERVICE  VERSION
+21/tcp    open     ftp      WU-FTPD wu-2.6.2-5
+22/tcp    open     ssh      OpenSSH 3.1p1 (protocol 1.99)
+23/tcp    open     telnet   Linux telnetd
+80/tcp    open     http     Apache httpd 1.3.23 ((Unix)  (Red-Hat/Linux) mod_ssl/2.8.7 OpenSSL/0.9.6b DAV/1.0.3 PHP/4.1.2 mod_perl/1.26)
+406/tcp   filtered imsp
+32768/tcp open     status   1 (RPC #100024)
+32769/tcp open     mountd   1-3 (RPC #100005)
+32768/udp open     status   1 (RPC #100024)
+32769/udp open     mountd   1-3 (RPC #100005)
+32770/udp open     nlockmgr 1-4 (RPC #100021)
+Service Info: OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Nmap scan report for 192.168.250.20
+Host is up (0.013s latency).
+Not shown: 997 closed udp ports (port-unreach), 996 closed tcp ports (conn-refused)
+PORT     STATE         SERVICE      VERSION
+22/tcp   open          ssh          OpenSSH 4.5 (protocol 2.0)
+23/tcp   open          telnet       Openwall GNU/*/Linux telnetd
+88/tcp   open          kerberos-sec Mac OS X kerberos-sec
+5900/tcp open          vnc          Apple remote desktop vnc
+88/udp   open          kerberos-sec MIT Kerberos 1.3 - 1.8 (server time: 2024-04-05 10:06:15Z)
+123/udp  open          ntp          NTP v4 (unsynchronized)
+5353/udp open|filtered zeroconf
+Service Info: OSs: Linux, Mac OS X; CPE: cpe:/o:linux:linux_kernel, cpe:/o:apple:mac_os_x
+
+Nmap scan report for 192.168.250.22
+Host is up (0.015s latency).
+Not shown: 984 closed udp ports (port-unreach), 973 closed tcp ports (conn-refused)
+PORT      STATE         SERVICE     VERSION
+7/tcp     open          echo
+9/tcp     open          discard?
+13/tcp    open          daytime     HP-UX daytime
+19/tcp    open          chargen
+21/tcp    open          ftp         HP-UX or AIX ftpd 1.1.214.4
+23/tcp    open          telnet      HP-UX telnetd
+25/tcp    open          smtp        Sendmail 8.9.3/8.9.3
+37/tcp    open          time        (32 bits)
+111/tcp   open          rpcbind     2-4 (RPC #100000)
+113/tcp   open          ident       HP-UX identd
+512/tcp   open          exec        HP-UX rexecd
+513/tcp   open          login
+514/tcp   open          tcpwrapped
+515/tcp   open          printer?
+543/tcp   open          klogin?
+544/tcp   open          kshell      HP-UX kerberized rsh
+2049/tcp  open          nfs         2-3 (RPC #100003)
+4045/tcp  open          llockmgr    1 (RPC #100020)
+5989/tcp  open          ssl/http    Web-Based Enterprise Management CIM serverOpenPegasus WBEM httpd
+6112/tcp  open          tcpwrapped
+49152/tcp open          status      1 (RPC #100024)
+49153/tcp open          llockmgr    1 (RPC #100020)
+49154/tcp open          nlockmgr    1-4 (RPC #100021)
+49155/tcp open          llockmgr    1 (RPC #100020)
+49156/tcp open          nlockmgr    1-4 (RPC #100021)
+49157/tcp open          ttdbserverd 1 (RPC #100083)
+49160/tcp open          mountd      1-3 (RPC #100005)
+7/udp     open          echo
+9/udp     open|filtered discard
+13/udp    open          daytime?
+19/udp    open          chargen
+111/udp   open          rpcbind     2-4 (RPC #100000)
+161/udp   open          snmp        SNMPv1 server (public)
+514/udp   open|filtered syslog
+518/udp   open|filtered ntalk
+2049/udp  open          nfs         2-3 (RPC #100003)
+4045/udp  open          llockmgr    1 (RPC #100020)
+49152/udp open          rpcbind     2-4 (RPC #100000)
+49153/udp open          status      1 (RPC #100024)
+49154/udp open          nlockmgr    1-4 (RPC #100021)
+49157/udp open          nlockmgr    1-4 (RPC #100021)
+49158/udp open          nlockmgr    1-4 (RPC #100021)
+49184/udp open          mountd      1-3 (RPC #100005)
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port13-UDP:V=7.94SVN%I=7%D=4/5%Time=660FD1C2%P=x86_64-pc-linux-gnu%r(He
+SF:lp,1E,"Fri\x20Apr\x2005\x2002:25:11\x20PST\x202024\r\n")%r(RPCCheck,1E,
+SF:"Fri\x20Apr\x2005\x2002:25:16\x20PST\x202024\r\n")%r(DNSVersionBindReq,
+SF:1E,"Fri\x20Apr\x2005\x2002:25:21\x20PST\x202024\r\n")%r(DNSStatusReques
+SF:t,1E,"Fri\x20Apr\x2005\x2002:25:26\x20PST\x202024\r\n")%r(NBTStat,1E,"F
+SF:ri\x20Apr\x2005\x2002:25:31\x20PST\x202024\r\n")%r(SIPOptions,1E,"Fri\x
+SF:20Apr\x2005\x2002:25:36\x20PST\x202024\r\n")%r(Sqlping,1E,"Fri\x20Apr\x
+SF:2005\x2002:25:44\x20PST\x202024\r\n")%r(NTPRequest,1E,"Fri\x20Apr\x2005
+SF:\x2002:25:49\x20PST\x202024\r\n")%r(SNMPv1public,1E,"Fri\x20Apr\x2005\x
+SF:2002:25:54\x20PST\x202024\r\n")%r(SNMPv3GetRequest,1E,"Fri\x20Apr\x2005
+SF:\x2002:25:59\x20PST\x202024\r\n")%r(xdmcp,1E,"Fri\x20Apr\x2005\x2002:26
+SF::04\x20PST\x202024\r\n")%r(AFSVersionRequest,1E,"Fri\x20Apr\x2005\x2002
+SF::26:09\x20PST\x202024\r\n")%r(DNS-SD,1E,"Fri\x20Apr\x2005\x2002:26:14\x
+SF:20PST\x202024\r\n")%r(Citrix,1E,"Fri\x20Apr\x2005\x2002:26:19\x20PST\x2
+SF:02024\r\n")%r(Kerberos,1E,"Fri\x20Apr\x2005\x2002:26:24\x20PST\x202024\
+SF:r\n")%r(sybaseanywhere,1E,"Fri\x20Apr\x2005\x2002:26:29\x20PST\x202024\
+SF:r\n")%r(NetMotionMobility,1E,"Fri\x20Apr\x2005\x2002:26:34\x20PST\x2020
+SF:24\r\n")%r(DTLSSessionReq,1E,"Fri\x20Apr\x2005\x2002:26:39\x20PST\x2020
+SF:24\r\n")%r(QUIC,1E,"Fri\x20Apr\x2005\x2002:26:44\x20PST\x202024\r\n");
+Service Info: Host: hpsux; OSs: HP-UX, Unix, Linux; CPE: cpe:/o:hp:hp-ux, cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 13 IP addresses (12 hosts up) scanned in 2045.15 seconds

@@ -1,0 +1,19 @@
+# Nmap 7.94SVN scan initiated Sun Apr  7 03:20:18 2024 as: nmap -sT -sU -sV -oN /home/noah/nmap2.txt 172.16.36.131
+Nmap scan report for 172.16.36.131
+Host is up (0.0064s latency).
+Not shown: 996 closed tcp ports (conn-refused), 995 closed udp ports (port-unreach)
+PORT     STATE         SERVICE      VERSION
+135/tcp  open          msrpc        Microsoft Windows RPC
+139/tcp  open          netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp  open          microsoft-ds Microsoft Windows XP microsoft-ds
+1025/tcp open          msrpc        Microsoft Windows RPC
+137/udp  open          netbios-ns   Microsoft Windows netbios-ssn (workgroup: WORKGROUP)
+138/udp  open|filtered netbios-dgm
+445/udp  open|filtered microsoft-ds
+500/udp  open|filtered isakmp
+4500/udp open|filtered nat-t-ike
+MAC Address: 00:0C:29:5B:10:82 (VMware)
+Service Info: Host: WINWORLD-2KWS; OSs: Windows, Windows XP; CPE: cpe:/o:microsoft:windows, cpe:/o:microsoft:windows_xp
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Apr  7 03:22:19 2024 -- 1 IP address (1 host up) scanned in 121.18 seconds

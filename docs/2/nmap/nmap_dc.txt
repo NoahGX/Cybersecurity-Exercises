@@ -1,0 +1,77 @@
+# Nmap 7.94SVN scan initiated Sun Mar 31 14:02:37 2024 as: nmap -sS -sU -sV -O -oN /home/noah/nmap_dc.txt 172.16.36.134
+Nmap scan report for 172.16.36.134
+Host is up (0.00097s latency).
+Not shown: 993 closed udp ports (port-unreach), 985 closed tcp ports (reset)
+PORT      STATE         SERVICE      VERSION
+22/tcp    open          ssh          OpenSSH 6.7p1 Debian 5+deb8u3 (protocol 2.0)
+53/tcp    open          domain       (generic dns response: NOTIMP)
+80/tcp    open          http         lighttpd 1.4.35
+88/tcp    open          kerberos-sec Heimdal Kerberos (server time: 2024-03-31 21:19:40Z)
+135/tcp   open          msrpc        Microsoft Windows RPC
+139/tcp   open          netbios-ssn  Samba smbd 3.X - 4.X (workgroup: DOMAIN)
+389/tcp   open          ldap         (Anonymous bind OK)
+443/tcp   open          ssl/http     lighttpd 1.4.35
+445/tcp   open          netbios-ssn  Samba smbd 3.X - 4.X (workgroup: DOMAIN)
+464/tcp   open          kpasswd5?
+631/tcp   open          ipp          CUPS 1.7
+636/tcp   open          ssl/ldap     (Anonymous bind OK)
+1024/tcp  open          msrpc        Microsoft Windows RPC
+3268/tcp  open          ldap         (Anonymous bind OK)
+3269/tcp  open          ssl/ldap     (Anonymous bind OK)
+53/udp    open          domain       (generic dns response: NOTIMP)
+88/udp    open          kerberos-sec Heimdal Kerberos (server time: 2024-03-31 21:03:05Z)
+137/udp   open          netbios-ns   Microsoft Windows netbios-ssn (workgroup: DOMAIN)
+138/udp   open|filtered netbios-dgm
+389/udp   open          ldap?
+464/udp   open          kpasswd5?
+10000/udp open          webmin       (https on TCP port 10000 ())
+4 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-TCP:V=7.94SVN%I=7%D=3/31%Time=6609D371%P=x86_64-pc-linux-gnu%r(D
+SF:NSVersionBindReqTCP,2B,"\0\)\0\x06\x81\x80\0\x01\0\0\0\0\0\x01\x07versi
+SF:on\x04bind\0\0\x10\0\x03\0\0\)\x02\0\0\0\0\0\0\0")%r(DNSStatusRequestTC
+SF:P,E,"\0\x0c\0\0\x90\x04\0\0\0\0\0\0\0\0");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port53-UDP:V=7.94SVN%I=7%D=3/31%Time=6609D36B%P=x86_64-pc-linux-gnu%r(D
+SF:NSVersionBindReq,29,"\0\x06\x81\x80\0\x01\0\0\0\0\0\x01\x07version\x04b
+SF:ind\0\0\x10\0\x03\0\0\)\x02\0\0\0\0\0\0\0")%r(DNSStatusRequest,C,"\0\0\
+SF:x90\x04\0\0\0\0\0\0\0\0")%r(NBTStat,32,"\x80\xf0\x80\x13\0\x01\0\0\0\0\
+SF:0\0\x20CKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\0\0!\0\x01");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port389-UDP:V=7.94SVN%I=7%D=3/31%Time=6609D36B%P=x86_64-pc-linux-gnu%r(
+SF:LDAPSearchReqUDP,714,"0\x82\x07\x02\x02\x01\x07d\x82\x06\xfb\x04\x000\x
+SF:82\x06\xf50A\x04\x1aconfigurationNamingContext1#\x04!CN=Configuration,D
+SF:C=domain,DC=lan0\*\x04\x14defaultNamingContext1\x12\x04\x10DC=domain,DC
+SF:=lan0-\x04\x17rootDomainNamingContext1\x12\x04\x10DC=domain,DC=lan0D\x0
+SF:4\x13schemaNamingContext1-\x04\+CN=Schema,CN=Configuration,DC=domain,DC
+SF:=lan0O\x04\x11subschemaSubentry1:\x048CN=Aggregate,CN=Schema,CN=Configu
+SF:ration,DC=domain,DC=lan0\x81\x95\x04\x15supportedCapabilities1\|\x04\x1
+SF:61\.2\.840\.113556\.1\.4\.800\x04\x171\.2\.840\.113556\.1\.4\.1670\x04\
+SF:x171\.2\.840\.113556\.1\.4\.1791\x04\x171\.2\.840\.113556\.1\.4\.1935\x
+SF:04\x171\.2\.840\.113556\.1\.4\.20800\x1e\x04\x14supportedLDAPVersion1\x
+SF:06\x04\x012\x04\x0130-\x04\nvendorName1\x1f\x04\x1dSamba\x20Team\x20\(h
+SF:ttp://samba\.org\)0\x18\x04\x0eisSynchronized1\x06\x04\x04TRUE0{\x04\rd
+SF:sServiceName1j\x04hCN=NTDS\x20Settings,CN=DC1,CN=Servers,CN=Default-Fir
+SF:st-Site-Name,CN=Sites,CN=Configuration,DC=domain,DC=lan0g\x04\nserverNa
+SF:me1Y\x04WCN=DC1,CN=Servers,CN=Default-First-Site-Name,CN=Sites,CN=Confi
+SF:guration,DC=domain,DC=lan0\x1f\x04\x0bdnsHostName1\x10\x04\x0edc1\.doma
+SF:in\.lan0/\x04\x0fldapServiceName1\x1c\x04\x1adomain\.lan:dc1\$@DOMAIN\.
+SF:LAN0\"\x04\x0bc");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port464-UDP:V=7.94SVN%I=7%D=3/31%Time=6609D3BD%P=x86_64-pc-linux-gnu%r(
+SF:NetMotionMobility,C4,"\0\xc4\0\x01\0\0~\x81\xbb0\x81\xb8\xa0\x03\x02\x0
+SF:1\x05\xa1\x03\x02\x01\x1e\xa4\x11\x18\x0f20240331212056Z\xa5\x05\x02\x0
+SF:3\n\x9d;\xa6\x03\x02\x01<\xa9\x15\x1b\x13<unspecified\x20realm>\xaa\x0b
+SF:0\t\xa0\x03\x02\x01\0\xa1\x020\0\xab4\x1b2open\x20/root/\.krb5/config:\
+SF:x20No\x20such\x20file\x20or\x20directory\xac3\x041\0\x02gensec_update\x
+SF:20failed:\x20NT_STATUS_LOGON_FAILURE\0\0");
+MAC Address: 00:0C:29:BB:79:70 (VMware)
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.12 - 4.10
+Network Distance: 1 hop
+Service Info: Host: DC1; OSs: Linux, Windows; CPE: cpe:/o:linux:linux_kernel, cpe:/o:microsoft:windows
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 31 14:21:19 2024 -- 1 IP address (1 host up) scanned in 1122.10 seconds

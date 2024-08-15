@@ -1,0 +1,168 @@
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.130
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.htaccess            (Status: 403) [Size: 295]
+[2K/.hta                 (Status: 403) [Size: 290]
+[2K/.htpasswd            (Status: 403) [Size: 295]
+[2K/cgi-bin/             (Status: 403) [Size: 294]
+[2K/dav                  (Status: 301) [Size: 317] [--> http://172.16.36.130/dav/]
+[2K/index                (Status: 200) [Size: 891]
+[2K/index.php            (Status: 200) [Size: 891]
+[2K/phpMyAdmin           (Status: 301) [Size: 324] [--> http://172.16.36.130/phpMyAdmin/]
+[2K/phpinfo.php          (Status: 200) [Size: 48005]
+[2K/phpinfo              (Status: 200) [Size: 47993]
+[2K/server-status        (Status: 403) [Size: 299]
+[2K/test                 (Status: 301) [Size: 318] [--> http://172.16.36.130/test/]
+[2K/twiki                (Status: 301) [Size: 319] [--> http://172.16.36.130/twiki/]
+
+===============================================================
+Finished
+===============================================================
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.131
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://172.16.36.131
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.133
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     https://172.16.36.133
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.134
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/css                  (Status: 301) [Size: 0] [--> http://172.16.36.134/css/]
+[2K/images               (Status: 301) [Size: 0] [--> http://172.16.36.134/images/]
+[2K/js                   (Status: 301) [Size: 0] [--> http://172.16.36.134/js/]
+[2K/samba                (Status: 301) [Size: 0] [--> http://172.16.36.134/samba/]
+
+===============================================================
+Finished
+===============================================================
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.135
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 213]
+[2K/.htaccess            (Status: 403) [Size: 218]
+[2K/.htpasswd            (Status: 403) [Size: 218]
+[2K/cgi-bin              (Status: 301) [Size: 237] [--> http://172.16.36.135/cgi-bin/]
+[2K/cgi-bin/             (Status: 403) [Size: 217]
+[2K/css                  (Status: 301) [Size: 233] [--> http://172.16.36.135/css/]
+[2K/images               (Status: 301) [Size: 236] [--> http://172.16.36.135/images/]
+[2K/index.php            (Status: 200) [Size: 2560]
+[2K/js                   (Status: 301) [Size: 232] [--> http://172.16.36.135/js/]
+[2K/phpinfo.php          (Status: 200) [Size: 83335]
+[2K/server-status        (Status: 200) [Size: 4732]
+
+===============================================================
+Finished
+===============================================================
+===============================================================
+Gobuster v3.6
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://172.16.36.136
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/wordlists/dirb/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.6
+[+] Timeout:                 10s
+===============================================================
+Starting gobuster in directory enumeration mode
+===============================================================
+[2K/.hta                 (Status: 403) [Size: 213]
+[2K/.htpasswd            (Status: 403) [Size: 218]
+[2K/.htaccess            (Status: 403) [Size: 218]
+[2K/server-status        (Status: 403) [Size: 222]
+[2K/index.php            (Status: 301) [Size: 0] [--> http://172.16.36.136/]
+[2K/wp-admin             (Status: 301) [Size: 238] [--> http://172.16.36.136/wp-admin/]
+[2K/wp-content           (Status: 301) [Size: 240] [--> http://172.16.36.136/wp-content/]
+[2K/wp-includes          (Status: 301) [Size: 241] [--> http://172.16.36.136/wp-includes/]
+
+[2K/xmlrpc.php           (Status: 405) [Size: 42]
+===============================================================
+Finished
+===============================================================
