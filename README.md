@@ -9,7 +9,7 @@ This repository contains three distinct folders, each designed to showcase diffe
 - **Penetration Testing**: Demonstrates active network scanning procedures, TCP and UDP port scans, and the use of OpenVAS/GVM for conducting vulnerability assessments on predetermined IP ranges.
 
 ## Usage
-- Navigate to the respective lab folder.
+- Navigate to the respective folder.
 - Store all outputs and logs in the predefined files and directories as instructed.
 - Outputs and logs are saved as files and documents for review.
 
