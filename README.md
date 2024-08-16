@@ -21,7 +21,7 @@ This repository contains three distinct folders, each designed to showcase diffe
 - Fixed datasets including network IP addresses and domain information used during the exercises.
 
 ## Output
-- Stored log files and output texts, such as `nmap1.txt`, `whois_pub_ip.txt`, and `dirbuster.txt`, which are available for review.
+- Stored log files and output texts, such as `nmap1.txt`, `whois_pub_ip.txt`, `dirbuster.txt`, and more which are available for review.
 - PDF reports from GVM scans, detailing the vulnerabilities found across various network setups.
 
 ## Notes
