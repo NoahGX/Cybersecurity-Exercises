@@ -10,7 +10,6 @@ This repository contains three distinct folders, each designed to showcase diffe
 
 ## Usage
 - Navigate to the respective folder.
-- Store all outputs and logs in the predefined files and directories as instructed.
 - Outputs and logs are saved as files and documents for review.
 
 ## Prerequisites
